@@ -1,1 +1,2 @@
-# django-todo
+# Django ToDoアプリ
+
