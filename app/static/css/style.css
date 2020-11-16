@@ -1,0 +1,23 @@
+body {
+    background: #F1F1F1;
+}
+
+.date {
+    max-width: 200px;
+}
+
+.add {
+    width: 100px;
+}
+
+.deadline {
+    width: 200px;
+}
+
+.edit {
+    width: 100px;
+}
+
+.delete {
+    width: 100px;
+}
