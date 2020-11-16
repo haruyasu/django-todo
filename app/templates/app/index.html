@@ -2,6 +2,17 @@
 
 {% block content %}
 
-<p>test</p>
+<a href="{% url 'create' %}">ToDO投稿</a>
+
+{% for todo in todo_data %}
+
+<p>{{ todo.title }}</p>
+<p>{{ todo.deadline }}</p>
+<div class="d-flex">
+    <a class="btn btn-warning mr-2" href="{% url 'edit' todo.id %}">編集</a>
+    <a class="btn btn-danger" href="{% url 'delete' todo.id %}">完了</a>
+</div>
+<hr>
+{% endfor %}
 
 {% endblock %}
